@@ -1,0 +1,161 @@
+:root {
+    --color-bg: #d5e3ff;
+    --color-card: #ffffff;
+    --color-primary: #2D3250;
+    --color-primary-light: #424769;
+    --color-text: #565656;
+    --color-title: #232429;
+    --color-white: #ffffff;
+    --box-shadow: 0px 4px 15px 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    background-color: var(--color-bg);
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    height: 100vh;
+    transition: 0.4s;
+  }
+  
+  /* change theme colors */
+  body.dark-theme {
+    --color-bg: #2f3034;
+    --color-card: #232429;
+    --color-text: #747474;
+    --color-title: #fff;
+  }
+  
+  .container {
+    height: 100%;
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+  }
+  
+  .card {
+    position: relative;
+    background-color: var(--color-card);
+    box-shadow: var(--box-shadow);
+    padding: 5rem 3.5rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 35rem;
+    color: var(--color-text);
+    transition: 0.4s;
+  }
+  
+  .card__image {
+    max-width: 12rem;
+    margin: auto;
+    margin-bottom: 5rem;
+    border-radius: 1rem;
+    border-radius: 50%;
+  }
+  
+  .card__body {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .card__name {
+    color: var(--color-title);
+    font-size: 2.2rem;
+    font-weight: 600;
+  }
+  
+  .card__occupation {
+    font-weight: 500;
+  }
+  
+  .social__list {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+    column-gap: 2rem;
+  }
+  
+  .social__link {
+    font-size: 2rem;
+    color: var(--color-text);
+    transition: 0.4s;
+  }
+  
+  .social__link:hover {
+    color: var(--color-primary);
+  }
+  
+  .card__button {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 1rem;
+    padding: 1.5rem 3.5rem;
+    background-color: var(--color-primary);
+    border-radius: 3rem;
+    color: var(--color-white);
+    transition: 0.4s;
+  }
+  
+  .card__button i {
+    font-size: 2.5rem;
+  }
+  
+  .card__button:hover {
+    background-color: var(--color-primary-light);
+  }
+  
+  .card__footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    column-gap: 3rem;
+  }
+  
+  .card__data-title {
+    font-size: 1.4rem;
+    font-weight: normal;
+  }
+  
+  .card__data-number {
+    color: var(--color-title);
+    font-weight: 500;
+  }
+  
+  .theme__toggle {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  
+  .theme__toggle:hover {
+    color: var(--color-title);
+  }
+  
