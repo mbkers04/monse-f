@@ -10,3 +10,5 @@ themeToggle.addEventListener("click", () => {
     themeToggle.classList.replace("bxs-sun", "bxs-moon");
   }
 });
+
+
